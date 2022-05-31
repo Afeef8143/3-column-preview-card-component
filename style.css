@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: hsl(0, 0%, 95%);
+    font-family: 'Lexend Deca', sans-serif;
+}
+
+main{
+    display: flex;
+    justify-content: center;
+    margin: 100px 0px 60px 0px;
+}
+main > div{
+    width: 250px;
+    height: 400px;
+    padding: 0px 41px;
+}
+
+.content1{
+    background-color: hsl(31, 77%, 52%);
+    border-radius: 5px 0px 0px 5px;
+}
+.content2{
+    background-color: hsl(184, 100%, 22%);
+}
+.content3{
+    background-color: hsl(179, 100%, 13%);
+    border-radius: 0px 5px 5px 0px;
+}
+
+img{
+    width: 55px;
+    margin: 35px 0px 30px 0px;
+}
+
+h1{
+    font-size: 30px;
+    margin-bottom: 20px;
+    color: hsl(0, 0%, 95%);
+    font-family: 'Big Shoulders Display', cursive;
+    text-transform: uppercase;
+}
+
+p{
+    font-size: 12px;
+    line-height: 22px;
+    margin-bottom: 50px;
+    color: hsla(0, 0%, 100%, 0.75);
+}
+
+main a{
+    display: inline-block;
+    text-decoration: none;
+    background-color: hsl(0, 0%, 95%);
+    padding: 10px 25px;
+    border-radius: 20px;
+}
+
+.content1 a{
+    color: hsl(31, 77%, 52%);
+    transition: 0.1s ease-in-out;
+}
+.content1 a:hover{
+    background-color: hsl(31, 77%, 52%);
+    color: hsl(0, 0%, 95%);
+    border: 2px solid hsl(0, 0%, 95%);
+}
+
+.content2 a{
+    color: hsl(184, 100%, 22%);
+    transition: 0.1s ease-in-out;
+}
+.content2 a:hover{
+    background-color: hsl(184, 100%, 22%);
+    color: hsl(0, 0%, 95%);
+    border: 2px solid hsl(0, 0%, 95%);
+}
+
+.content3 a{
+    color: hsl(179, 100%, 13%);
+    transition: 0.1s ease-in-out;
+}
+.content3 a:hover{
+    background-color: hsl(179, 100%, 13%);
+    color: hsl(0, 0%, 95%);
+    border: 2px solid hsl(0, 0%, 95%);
+}
+
+@media only screen and (max-width: 750px){
+    main{
+        flex-direction: column;
+        align-items: center;
+    }
+    .content1{
+        border-radius: 5px 5px 0px 0px;
+    }
+    .content3{
+        border-radius: 0px 0px 5px 5px;
+    }
+    .attribution{
+        margin-bottom: 20px;
+    }
+}
